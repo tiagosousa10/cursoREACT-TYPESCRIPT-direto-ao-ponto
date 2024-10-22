@@ -12,7 +12,7 @@ const shuffleArray = (array) => {
     // gerar um valor aleatorio
     const j = Math.floor(Math.random() * (i + 1));
     // inverter o sentido dos arrays
-    [array[i], array[j]] = [array[j], [array[i]]];
+    [array[i], array[j]] = [array[j], array[i]];
   }
   // retornar o Array
   return array;
@@ -35,7 +35,7 @@ const generateCards = () => {
   const duplicateCards = cards
     .concat([...cards])
     .map((card, index) => ({ ...card, id: index }));
-
+  console.log('duplicados: ', duplicateCards);
   return shuffleArray(duplicateCards); // mostrar cartoes embaralhados
   // console.log(duplicateCards); // mostrar cartas duplicadas
 };
@@ -49,7 +49,7 @@ function Game() {
   const [flippedCards, setFlippedCards] = useState([]);
   const playerChances = 100;
   // o numero de chances começa com 6
-  const [chances, setChances] = useState(100);
+  const [chances, setChances] = useState(playerChances);
 
   // o resultado = ao numero de cartoes virados(flipped)
   const result = cards.filter((card) => card.isFlipped).length;
