@@ -16,8 +16,8 @@ console.log(money);
 money = 200;
 //Arrays e Objetos
 let numbers = [1, 2, 3];
-let stringArray = ['a', 'b', 'c'];
-console.log(numbers, stringArray);
+let stringArray1 = ['a', 'b', 'c'];
+console.log(numbers, stringArray1);
 let user = {
     name: 'TesteName',
     age: 50

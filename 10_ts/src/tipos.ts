@@ -25,8 +25,8 @@ money=200;
 
 //Arrays e Objetos
 let numbers:number[] = [1,2,3]
-let stringArray :string[] = ['a','b','c']
-console.log(numbers,stringArray)
+let stringArray1 :string[] = ['a','b','c']
+console.log(numbers,stringArray1)
 
 
 let user:{name:string,age:number} = {
