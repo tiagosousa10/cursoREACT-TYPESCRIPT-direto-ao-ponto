@@ -1,0 +1,11 @@
+// Ficheiro de Config em JSON para TS
+{
+    "compilerOptions": {
+        "outDir": "./dist",
+        "noImplicitAny": true,
+        "module": "CommonJS",
+        "target": "es6" ,// versao es6 do javascript
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules"]
+}
