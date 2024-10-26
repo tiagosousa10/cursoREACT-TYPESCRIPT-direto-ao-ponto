@@ -12,6 +12,7 @@ export default [
   pluginReact.configs.flat.recommended,
   {rules:{
     'react/react-in-jsx-scope':0,
-    "indent": ["error", 2]
+    "indent": ["error", 2], // identaçao
+    'semi': [1, "always"] // ;
   }}
 ];
